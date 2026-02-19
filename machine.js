@@ -17,3 +17,24 @@ function setBalance(value){
     const balanceElement = document.getElementById("balance");
     balanceElement.innerText = value;
 }
+
+// machine hide all show one 
+function showOne(id){
+    
+    const addMoney = document.getElementById('add-money');
+    const cashOut = document.getElementById('cashout');
+    const tHistory = document.getElementById('history');
+    // console.log(`add money- ${addMoney}, cashOut- ${cashOut}`)
+
+// all hide 
+    addMoney.classList.add('hidden');
+    cashOut.classList.add('hidden');
+    tHistory.classList.add('hidden');
+
+    // clicked btn show means unhide
+
+    const selected = document.getElementById(id);
+    selected.classList.remove('hidden');
+
+
+}
