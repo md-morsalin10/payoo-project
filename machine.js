@@ -26,6 +26,7 @@ function showOne(id){
     const tHistory = document.getElementById('history');
     const transferMoney = document.getElementById('transfer-money');
     const bonusAdd = document.getElementById('get-bonus');
+    const payBill = document.getElementById('pay-bill');
     // console.log(`add money- ${addMoney}, cashOut- ${cashOut}`)
 
 // all hide 
@@ -34,6 +35,8 @@ function showOne(id){
     tHistory.classList.add('hidden');
     transferMoney.classList.add('hidden');
     bonusAdd.classList.add('hidden');
+    payBill.classList.add('hidden')
+    
 
     // clicked btn show means unhide
 

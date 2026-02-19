@@ -18,6 +18,9 @@ document.getElementById("add-money-btn").addEventListener("click", function () {
     // 3. get amount
     const amount = getValueFromInput('add-money-amount');
     const currentBalance = getBalance()
+    if(amount<=0){
+        alert('Enter a valid amount')
+    }
     const newBalance = currentBalance + Number(amount)
     console.log(newBalance)
 
