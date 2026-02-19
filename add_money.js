@@ -37,7 +37,6 @@ document.getElementById("add-money-btn").addEventListener("click", function () {
         add money successful from- ${bankAccount} account number- ${accno} at ${new Date()}
         </div>
         `
-
         // append to 
         history.append(newHistory);
     }
